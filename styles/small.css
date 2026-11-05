@@ -20,6 +20,7 @@ body {
     background-color: var(--cream);
     color: var(--text);
     line-height: 1.6;
+    overflow-wrap: break-word;
 }
 
 img {
@@ -337,6 +338,3 @@ footer {
 }
 
 
-body {
-    overflow-wrap: break-word;
-}

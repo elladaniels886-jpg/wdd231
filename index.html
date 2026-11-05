@@ -3,10 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Homepage</title>
-</head>
-<body>
-    Hello can you hear me
+
+    <meta name="description" content="Daniella Isiuwa-Daniel's WDD 231 course homepage, featuring an introduction, software development studies, and Web and Computer Programming courses.">
+    <meta name="author" content="Daniella Isiuwa-Daniel">
+
+    <title>Home | Daniella Isiuwa-Daniel</title>
+
     
-</body>
-</html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <div class="header-content">
+
+            <div class="brand">
+                <img src="images/logo.svg" alt="" width="45" height="45">
+                <span>Daniella Isiuwa-Daniel</span>
+            </div>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+        </div>
+
+        <nav id="primary-navigation" class="navigation" aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="chamber/">Chamber</a>
+            <a href="final/">Final</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <h1>Home</h1>
+
+        <section class="about-section">
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! My name is Daniella Isiuwa-Daniel.
+                        I am a Software Development student with an
+                        interest in building meaningful digital
+                        experiences through technology.
+                    </p>
+
+                    <p>
+                        I actually enjoy learning about web development,
+                        programming, user experience, and the creative
+                        parts of technology. I am currently
+                        developing my skills in HTML, CSS, JavaScript,
+                        and other programming technologies.
+                    </p>
+
+                    <p>
+                        My goal is to become a skilled software
+                        developer capable of creating
+                    functional and user-friendly applications.
+                    </p>
+                </div>
+
+                <div class="about-highlight">
+                    <span class="highlight-label">CURRENT FOCUS</span>
+                    <h3>Learning. Building. Growing.</h3>
+                    <p>
+                        Exploring the intersection of technology,
+                        creativity, and problem-solving.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="photo-section">
+            <h2>Student Photo</h2>
+
+            <figure>
+                <img
+                    src="images/profile.webp"
+                    alt="Portrait of Daniella Isiuwa-Daniel"
+                    width="400"
+                    height="500"
+                    loading="lazy">
+                <figcaption>
+                    Daniella Isiuwa-Daniel | Software Development Student
+                </figcaption>
+            </figure>
+        </section>
+
+   
+        <section class="certificate-section">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="course-filters">
+                <button id="allCourses" class="filter-button active-filter">
+                    All Courses
+                </button>
+
+                <button id="wddCourses" class="filter-button">
+                    WDD Courses
+                </button>
+
+                <button id="cseCourses" class="filter-button">
+                    CSE Courses
+                </button>
+            </div>
+
+            <p class="credit-summary">
+                Total Credits:
+                <strong><span id="totalCredits">12</span></strong>
+            </p>
+
+            <div id="courseContainer" class="course-container">
+               
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+            <a href="https://github.com/elladaniels886-jpg"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub profile">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/daniella-isiuwa-daniel-899655251/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn profile">
+                LinkedIn
+            </a>
+
+            <a href="https://www.instagram.com/d_dahniella/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram profile">
+                Instagram
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p>
+                &copy; <span id="currentyear"></span>
+                Daniella Isiuwa-Daniel
+            </p>
+
+            <p>Abia State, Nigeria</p>
+            <p>BYU-Idaho | WDD 231</p>
+        </div>
+
+        <div class="last-modified">
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>

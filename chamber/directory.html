@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore businesses and organizations that are members of the Abia Business & Commerce Network in Abia State, Nigeria.">
+    <meta name="author" content="Daniella Isiuwa-Daniel">
+
+    <title>Business Directory | Abia Business & Commerce Network</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    
+    <meta property="og:title" content="ABCN | Abia Business & Commerce Network">
+    <meta property="og:description" content="Discover businesses and organizations in the Abia Business & Commerce Network.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://elladaniels886-jpg.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://elladaniels886-jpg.github.io/wdd231/chamber/directory.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/favicon.svg" alt="ABCN logo" width="60" height="60">
+            </a>
+
+            <div class="site-name">
+                <span class="site-title">Abia Business & Commerce Network</span>
+                <span class="site-tagline">Connecting Businesses. Growing Abia.</span>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav>
+            <ul id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+
+        <div class="view-options">
+            <button id="grid-view" class="active-view" aria-pressed="true">
+                Grid View
+            </button>
+
+            <button id="list-view" aria-pressed="false">
+                List View
+            </button>
+        </div>
+
+        <section id="members-container" class="members-grid" aria-label="Chamber business members">
+   
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h2>Abia Business & Commerce Network</h2>
+            <p>Abia State, Nigeria</p>
+            <p>Email: info@abcn.com</p>
+            <p>Phone: 090-349-3455</p>
+        </div>
+
+        <div class="footer-social">
+            <h2>Connect With Us</h2>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <div class="footer-development">
+            <p>WDD 231: Web Frontend Development I</p>
+            <p>Created by Daniella Isiuwa-Daniel</p>
+            <p>&copy; <span id="current-year"></span> ABCN</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>

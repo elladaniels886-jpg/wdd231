@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Abia Fresh Foods",
+    "address": "12 Market Road, Umuahia, Abia State",
+    "phone": "070-125-83643",
+    "website": "https://abia-fresh-foods/",
+    "image": "abia-fresh-foods.webp",
+    "membershipLevel": 3,
+    "description": "A food supply and agricultural produce business serving households and retailers."
+  },
+  {
+    "name": "Aba Tech Solutions",
+    "address": "24 Azikiwe Road, Aba, Abia State",
+    "phone": "070-125-83644",
+    "website": "https://abatechsolutions/",
+    "image": "aba-tech-solutions.webp",
+    "membershipLevel": 2,
+    "description": "A technology company providing computer sales, repairs, and digital services."
+  },
+  {
+    "name": "Umuahia Royal Hotel",
+    "address": "8 Library Avenue, Umuahia, Abia State",
+    "phone": "070-125-83645",
+    "website": "https://umuahiaroyalhotel/",
+    "image": "umuahia-royal-hotel.webp",
+    "membershipLevel": 3,
+    "description": "A hospitality business offering accommodation, dining, and event facilities."
+  },
+  {
+    "name": "Eastern Star Supermarket",
+    "address": "15 Asa Road, Aba, Abia State",
+    "phone": "070-125-83646",
+    "website": "https://easternstarsupermarket/",
+    "image": "eastern-star-supermarket.webp",
+    "membershipLevel": 1,
+    "description": "A retail store supplying groceries, household goods, and everyday essentials."
+  },
+  {
+    "name": "GreenFields Agro Ventures",
+    "address": "6 Bende Road, Umuahia, Abia State",
+    "phone": "070-125-83647",
+    "website": "https://greenfieldsagro/",
+    "image": "greenfields-agro.webp",
+    "membershipLevel": 2,
+    "description": "An agricultural enterprise focused on crop production and farm supplies."
+  },
+  {
+    "name": "AbiaCare Medical Centre",
+    "address": "19 Hospital Road, Aba, Abia State",
+    "phone": "070-125-83648",
+    "website": "https://abiacare.com/",
+    "image": "abia-care-medical.webp",
+    "membershipLevel": 1,
+    "description": "A sample healthcare provider offering general medical services."
+  },
+  {
+    "name": "Prime Manufacturing Industries",
+    "address": "Industrial Layout, Osisioma, Abia State",
+    "phone": "070-125-83649",
+    "website": "https://primemanufacturing/",
+    "image": "prime-manufacturing.webp",
+    "membershipLevel": 3,
+    "description": "A sample manufacturing company producing goods for local and regional markets."
+  }
+]

@@ -87,11 +87,13 @@ async function getForecast() {
 
             forecastCard.innerHTML = `
                 <h4>${dayName}</h4>
-                <img
-                    src="https://openweathermap.org/img/wn/${weatherIcon}.png"
-                    alt="${description}"
-                    loading="lazy"
-                >
+             <img
+                src="https://openweathermap.org/img/wn/${weatherIcon}.png"
+                alt="${description}"
+                width="50"
+                height="50"
+                loading="lazy"
+             >
                 <p>${temperature}°C</p>
                 <p>${description}</p>
             `;

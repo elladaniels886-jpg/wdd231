@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Welcome to Abia Business & Commerce Network (ABCN), connecting businesses and supporting economic growth across Abia State, Nigeria.">
+    <meta name="author" content="Daniella Isiuwa-Daniel">
+
+    <title>Home | Abia Business & Commerce Network</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Home | Abia Business & Commerce Network">
+    <meta property="og:description" content="Connecting businesses and supporting economic growth across Abia State, Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://elladaniels886-jpg.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://elladaniels886-jpg.github.io/wdd231/chamber/index.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/favicon.svg" alt="ABCN logo" width="60" height="60">
+            </a>
+
+            <div class="site-name">
+                <span class="site-title">Abia Business & Commerce Network</span>
+                <span class="site-tagline">Connecting Businesses. Growing Abia.</span>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav>
+            <ul id="primary-navigation">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+<main>
+    <section class="hero">
+        <img
+            class="hero-image"
+            src="images/abcn-hero.jpg"
+            alt="Business district in Umuahia, Abia State"
+        >
+
+        <div class="hero-content">
+            <h1>Connecting Businesses. Growing Abia.</h1>
+
+            <p>
+                Discover opportunities, build meaningful connections,
+                and grow your business with the Abia Business & Commerce Network.
+            </p>
+
+            <a href="join.html" class="hero-cta">
+                Join the Chamber
+            </a>
+        </div>
+    </section>
+
+<section class="events-section">
+    <h2>Upcoming Events</h2>
+
+    <div class="events-container">
+
+        <article class="event-card">
+            <h3>Business Networking Forum</h3>
+
+            <p>
+                Connect with entrepreneurs, business owners,
+                and professionals across Abia State.
+            </p>
+
+            <span class="event-category">Networking</span>
+        </article>
+
+        <article class="event-card">
+            <h3>SME Growth Workshop</h3>
+
+            <p>
+                Learn practical strategies for improving
+                business operations, marketing, and customer relationships.
+            </p>
+
+            <span class="event-category">Workshop</span>
+        </article>
+    </div>
+    <section>
+
+    <section class="weather-section">
+    <h2>Umuahia Weather</h2>
+
+    <div class="weather-container">
+
+        <div class="current-weather">
+            <h3>Current Conditions</h3>
+
+            <p id="current-temp">--°C</p>
+
+            <figure>
+                <img id="weather-icon" src="#" alt="Weather conditions">
+                <figcaption id="weather-description">
+                    Loading weather...
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="weather-forecast">
+            <h3>Three-Day Forecast</h3>
+
+            <div id="forecast-container">
+                <p>Loading forecast...</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="spotlights-section">
+    <h2>Business Spotlights</h2>
+
+    <div id="spotlights-container">
+        <p>Loading business spotlights...</p>
+    </div>
+</section>
+
+</main>
+
+    <footer>
+        <div class="footer-contact">
+            <h2>Abia Business & Commerce Network</h2>
+            <p>Abia State, Nigeria</p>
+            <p>Email: info@abcn.com</p>
+            <p>Phone: 090-349-3455</p>
+        </div>
+
+        <div class="footer-social">
+            <h2>Connect With Us</h2>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <div class="footer-development">
+            <p>WDD 231: Web Frontend Development I</p>
+            <p>Created by Daniella Isiuwa-Daniel</p>
+            <p>&copy; <span id="current-year"></span> ABCN</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>

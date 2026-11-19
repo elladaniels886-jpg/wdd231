@@ -115,3 +115,63 @@
         padding: 1.5rem;
     }
 }
+
+
+@media screen and (min-width: 768px) {
+    .hero,
+    .hero-image {
+        height: 550px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.15rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .events-section {
+        padding: 3rem 2rem;
+    }
+
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .weather-section {
+        padding: 3rem 2rem;
+    }
+
+    .weather-container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .spotlights-section {
+        padding: 3rem 2rem;
+    }
+
+    #spotlights-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .spotlight-card {
+        padding: 1.2rem;
+    }
+}

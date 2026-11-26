@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #F5EBDD;
+    color: #3B2520;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #3B2520;
+    color: #F5EBDD;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+section {
+    background-color: #FFFFFF;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+h2 {
+    border-bottom: 2px solid #A65E3B;
+    padding-bottom: 0.5rem;
+}
+
+a {
+    color: #3B2520;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+}

@@ -324,7 +324,7 @@ button:focus-visible {
     display: inline-block;
     padding: 0.85rem 1.5rem;
     background-color: #b8860b;
-    color: white;
+    color: #17263c;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
@@ -500,4 +500,325 @@ button:focus-visible {
 .spotlight-card a:focus-visible {
     background-color: var(--navy-light);
     color: var(--gold);
+}
+
+
+.join-intro {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    color: var(--muted);
+}
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.membership-form-section,
+.membership-levels {
+    min-width: 0;
+}
+
+.membership-form-section h2,
+.membership-levels h2 {
+    color: var(--navy);
+    margin-bottom: 1.2rem;
+}
+
+#membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+#membership-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+#membership-form input:not([type="hidden"]),
+#membership-form select,
+#membership-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--text);
+    font: inherit;
+    font-weight: 400;
+}
+
+#membership-form input:focus,
+#membership-form select:focus,
+#membership-form textarea:focus {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+    border-color: var(--navy);
+}
+
+#membership-form textarea {
+    resize: vertical;
+}
+
+#membership-form input[type="submit"] {
+    margin-top: 0.5rem;
+    padding: 0.9rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--navy);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#membership-form input[type="submit"]:hover,
+#membership-form input[type="submit"]:focus-visible {
+    background-color: var(--navy-light);
+    color: var(--gold);
+}
+
+
+/* Membership Level Cards */
+
+.membership-levels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-content: start;
+}
+
+.membership-levels h2 {
+    margin-bottom: 0;
+}
+
+.membership-card {
+    padding: 1.3rem;
+    text-align: center;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--gold);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+    opacity: 0;
+    animation: membership-card-entrance 0.7s ease forwards;
+}
+
+.membership-card h3 {
+    margin: 0 0 0.5rem;
+    color: var(--navy);
+}
+
+.membership-card p {
+    margin: 0 0 1rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.membership-card a {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background-color: var(--navy);
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.membership-card a:hover,
+.membership-card a:focus-visible {
+    background-color: var(--navy-light);
+    color: var(--gold);
+}
+
+/* Different animation delays */
+
+.np-card {
+    animation-delay: 0.1s;
+}
+
+.bronze-card {
+    animation-delay: 0.3s;
+}
+
+.silver-card {
+    animation-delay: 0.5s;
+}
+
+.gold-card {
+    animation-delay: 0.7s;
+}
+
+@keyframes membership-card-entrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Membership Dialog Modals */
+
+dialog {
+    width: 90%;
+    max-width: 450px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--cream);
+    color: var(--text);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+dialog::backdrop {
+    background-color: rgba(23, 38, 60, 0.7);
+}
+
+.modal-content {
+    padding: 1.5rem;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: var(--navy);
+}
+
+.modal-content li {
+    margin-bottom: 0.6rem;
+}
+
+.close-modal {
+    display: block;
+    margin: 1.5rem 0 0 auto;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    background-color: var(--navy);
+    color: var(--white);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus-visible {
+    background-color: var(--navy-light);
+    color: var(--gold);
+}
+
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    #membership-form input[type="submit"] {
+        transition: none;
+    }
+}
+
+
+
+
+.thankyou-page {
+    padding: 3rem 1rem;
+    background-color: var(--cream, #f8f6f1);
+}
+
+.thankyou-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background-color: white;
+    border: 1px solid #dedbd3;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(23, 38, 60, 0.08);
+}
+
+.thankyou-card h1 {
+    color: #17263c;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.thankyou-card > p {
+    text-align: center;
+    line-height: 1.7;
+    color: #555;
+}
+
+.thankyou-card h2 {
+    color: #17263c;
+    margin-top: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #d6b477;
+}
+
+#application-details {
+    margin-top: 1rem;
+}
+
+#application-details p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 0;
+    margin: 0;
+    border-bottom: 1px solid #dedbd3;
+    overflow-wrap: anywhere;
+}
+
+#application-details strong {
+    color: #17263c;
+}
+
+/* Return to Home button */
+.thankyou-card .button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.9rem 1.5rem;
+    background-color: #17263c;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #17263c;
+    border-radius: 6px;
+    text-align: center;
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.thankyou-card .button:hover {
+    background-color: #d6b477;
+    color: #17263c;
+    border-color: #d6b477;
+    transform: translateY(-2px);
+}
+
+.thankyou-card .button:focus-visible {
+    outline: 3px solid #d6b477;
+    outline-offset: 4px;
 }

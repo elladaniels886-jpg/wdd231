@@ -175,3 +175,68 @@
         padding: 1.2rem;
     }
 }
+
+
+@media screen and (min-width: 768px) {
+
+    .join-layout {
+        grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+        gap: 2rem;
+        align-items: start;
+    }
+
+    #membership-form {
+        padding: 2rem;
+    }
+
+    .membership-levels {
+        gap: 1.2rem;
+    }
+
+    .membership-card {
+        padding: 1.5rem;
+    }
+
+    .membership-levels h2 {
+        margin-bottom: 0.3rem;
+    }
+}
+
+
+/* Larger Desktop */
+
+@media screen and (min-width: 1100px) {
+
+    .join-layout {
+        grid-template-columns: minmax(0, 1.6fr) minmax(320px, 1fr);
+        gap: 3rem;
+    }
+
+    #membership-form {
+        padding: 2.2rem;
+    }
+
+    .membership-card {
+        padding: 1.7rem;
+    }
+}
+
+
+
+
+@media (min-width: 768px) {
+    .thankyou-page {
+        padding: 4rem 2rem;
+    }
+
+    .thankyou-card {
+        padding: 3rem;
+    }
+
+    #application-details p {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        align-items: start;
+        gap: 1rem;
+    }
+}

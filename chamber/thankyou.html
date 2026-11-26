@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Apply for membership with the Abia Business & Commerce Network and connect with businesses across Abia State, Nigeria.">
+    <meta name="author" content="Daniella Isiuwa-Daniel">
+
+    <title>Join | Abia Business & Commerce Network</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Join ABCN | Abia Business & Commerce Network">
+    <meta property="og:description" content="Apply for membership with the Abia Business & Commerce Network.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://elladaniels886-jpg.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://elladaniels886-jpg.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/favicon.svg" alt="ABCN logo" width="60" height="60">
+            </a>
+
+            <div class="site-name">
+                <span class="site-title">Abia Business & Commerce Network</span>
+                <span class="site-tagline">Connecting Businesses. Growing Abia.</span>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav>
+            <ul id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="thankyou-page">
+    <section class="thankyou-card">
+        <h1>Thank You for Applying!</h1>
+
+        <p>
+            Thank you for your interest in joining the
+            Abia Business &amp; Commerce Network.
+        </p>
+
+        <p>
+            Your membership application has been received.
+            We look forward to connecting your business
+            with opportunities across Abia State.
+        </p>
+
+        <h2>Application Details</h2>
+
+        <div id="application-details">
+            <p><strong>First Name:</strong> <span id="firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile:</strong> <span id="phone"></span></p>
+            <p><strong>Organization:</strong> <span id="organization"></span></p>
+            <p><strong>Submitted:</strong> <span id="timestamp"></span></p>
+        </div>
+
+        <a href="index.html" class="button">Return to Home</a>
+    </section>
+</main>
+
+    <footer>
+        <div class="footer-contact">
+            <h2>Abia Business & Commerce Network</h2>
+            <p>Abia State, Nigeria</p>
+            <p>Email: info@abcn.com</p>
+            <p>Phone: 090-349-3455</p>
+        </div>
+
+        <div class="footer-social">
+            <h2>Connect With Us</h2>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <div class="footer-development">
+            <p>WDD 231: Web Frontend Development I</p>
+            <p>Created by Daniella Isiuwa-Daniel</p>
+            <p>&copy; <span id="current-year"></span> ABCN</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>
